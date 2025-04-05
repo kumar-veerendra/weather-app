@@ -1,12 +1,104 @@
-# React + Vite
+Awesome choice, Veerendra! Using **React** makes your weather app scalable and dynamic. Here's an updated README tailored for a **React-based Weather App** using the [OpenWeatherMap API](https://openweathermap.org/current).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 🌦️ React Weather App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple and responsive weather app built with **React**. It fetches current weather data from the [OpenWeatherMap API](https://openweathermap.org/current) based on the user's input (city name).
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*(Optional: Add a screenshot or live demo link here)*  
+[Live Demo](https://kumar-veerendra.github.io/weather-app)
+
+## 🚀 Features
+
+- Real-time weather updates
+- Search by **city name**
+- Displays:
+  - 🌡️ Temperature
+  - 💧 Humidity
+  - 🌥️ Weather condition
+- Clean and responsive UI using **React Hooks**
+
+## 🛠️ Tech Stack
+
+- ⚛️ React (with functional components & hooks)
+- 📡 Axios (for HTTP requests)
+- 🌐 OpenWeatherMap API
+## 📁 Project Structure
+
+```bash
+react-weather-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Weather.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── .env
+├── package.json
+└── README.md
+```
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/react-weather-app.git
+cd react-weather-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Get your API key from OpenWeatherMap
+
+- Sign up at [https://openweathermap.org](https://openweathermap.org)
+- Go to your profile and copy the **API key**
+
+### 4. Create a `.env` file in the root folder
+
+```env
+REACT_APP_WEATHER_API_KEY=your_api_key_here
+```
+
+> ⚠️ Make sure to restart the server after adding `.env`
+
+### 5. Run the app
+
+```bash
+npm start
+```
+
+The app will run at `http://localhost:3000`.
+
+## 🔍 Example Output
+
+```text
+📍 Weather in Mumbai
+Temperature: 32°C
+Humidity: 70%
+Wind Speed: 12 km/h
+Condition: Light Rain
+```
+
+## 📌 Notes
+
+- Make sure your API key is correct.
+- API calls are limited on the free tier.
+- This app uses metric units by default (Celsius).
+
+## 📝 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+Would you like me to generate the actual React code for the app too? I can build it using components like `App.js` and `Weather.js` with live API integration.
